@@ -1,0 +1,104 @@
+body {
+    background: rgb(248, 239, 239);
+}
+    
+a {
+    color: #333;
+}
+
+/* Menu */
+.main-nav {
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+.main-nav .menu {
+    height: 32px;
+}
+
+.main-nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Post */
+article {
+    .post {
+        border-bottom:1px #ccc solid;
+	    overflow:hidden;
+        a { 
+            .button {  /* Read More */
+                display:inline-block;
+                background:#333;
+                color:#fff;
+                padding:10px 5px;
+                margin-bottom: 10px;
+                text-decoration: none;
+            }
+        } 
+    }
+}
+
+.post-thumbnail { 
+    img {
+	    width:100%;
+    	height:auto;
+    }
+}
+
+/* Single Page */
+.meta {
+	background:#333;
+	color:#fff;
+	padding:5px;
+}
+
+/* Sidebar */
+.sidebar {
+    float:right;
+    width:28%;
+}
+
+.side-widget {
+    border:1px #ccc solid;
+    padding:10px 10px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.Side-widget li {
+    list-style: none;
+    line-height:2.2em;
+    border-bottom:dotted 1px #ccc;
+}
+
+.Side-widget a {
+    text-decoration: none;
+}
+
+.clr {
+    clear:both;
+}
+
+.meta {
+    background:#333;
+    color:#fff;
+    padding:5px;
+}
+.meta a {
+    color:#fff;
+}
+
+/* Footer */
+footer {
+	background:#393939;
+	color:#fff;
+	padding:10px 10px;
+	text-align:center;
+}
