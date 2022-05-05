@@ -1,18 +1,17 @@
 <?php
-    /**
-     * The main template file
-     *
-     *
-     * @package WordPress
-     * @subpackage wpThemes
-     * @since wpThemes 1.0
-     */
- ?>
+/**
+ * The template for displaying all single posts
+ * 
+ * @package WordPress
+ * @subpackage wpThemes
+ * @since wpThemes 1.0
+ */
+?>
 
-    
+
 <?php get_header(); ?>
 
-        <div class="container content">
+	<div class="container content">
             <div class="main block">
                 <?php if(have_posts()) : ?>
                     <?php while(have_posts()) : the_post(); ?>
@@ -45,8 +44,7 @@
                                 </div>
                             <?php endif; ?>
 
-                            <?php the_excerpt(); ?>
-                            <a class="button" href="<?php the_permalink(); ?>">Read More</a>
+                            <?php the_content(); ?>
                         </article>
                     <?php endwhile; ?>
                 <?php else : ?>
@@ -63,6 +61,6 @@
                 </div>
             </div> <!-- .side -->
 
-        </div> <!-- .content -->
-
+    </div> <!-- .content -->
+	
         <?php get_footer(); ?>
