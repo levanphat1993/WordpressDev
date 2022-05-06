@@ -1,16 +1,14 @@
 <?php
-    /**
-     * The main template file
-     *
-     *
-     * @package WordPress
-     * @subpackage wpThemes
-     * @since wpThemes 1.0
-     */
-    get_header(); ?>
+	/*
+		Template Name: Company Layout
+	*/
+?>
+<?php get_header(); ?>
 
-<div class="container">
-	<div class="content">
+<div class="container content">
+
+    <div class="content">
+
         <div class="main block">
             <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : the_post(); ?>
@@ -20,14 +18,15 @@
                 <?php echo wpautop('Sorry, no posts were found'); ?>
             <?php endif; ?>
         </div>
+
         <div class="side">
             <?php if(is_active_sidebar('sidebar')) : ?>
                 <?php dynamic_sidebar('sidebar'); ?>
             <?php endif; ?>
-        </div>
-    </div>
-</div>
+        </div> <!-- .side -->
 
-<div class="clr"></div>
+    </div>
+
+</div> <!-- .content -->
 
 <?php get_footer(); ?>
